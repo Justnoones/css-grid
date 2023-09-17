@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animation {
+    animation-name: animation;
+    animation-duration: 1.5s;
+    animation-delay: 1.8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animation {
+    0% {
+        padding: 0;
+        height: 0;
+        width: 0;
+        background: rgba(0, 0, 0, 0);
+    }
+
+    25% {
+        padding: 40px;
+        height: 180px;
+        width: 400px;
+        background: rgba(0, 0, 0, 1);
+    }
+
+    50% {
+        border-radius: 30px;
+        border: 2px solid red;
+        box-shadow: 3px 3px 3px blue;
+        box-shadow: -3px -3px 3px blue;
+    }
+
+    100% {
+        border: 5px solid red;
+        box-shadow: 5px 5px 5px blue;
+        box-shadow: -5px -5px 5px blue;
+        border-radius: 30px;
+        padding: 40px;
+        height: 180px;
+        width: 400px;
+        background: rgba(0, 0, 0, 1);
+    }
+}
+
+div {
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    background-image: linear-gradient(30deg, red, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-1 {
+    animation-name: firstword;
+    animation-duration: 1.5s;
+}
+
+@keyframes firstword {
+    from {
+        rotate: -40deg;
+        translate: -150px -150px;
+        opacity: 0;
+        background-image: linear-gradient(30deg, red, blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    to {
+        background-image: linear-gradient(30deg, red, blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.text-2 {
+    animation-name: secondword;
+    animation-duration: 1.5s;
+}
+
+@keyframes secondword {
+    0% {
+        translate: 0 -150px;
+        opacity: 0;
+        background-image: linear-gradient(30deg, red, blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    50% {
+        translate: 0 20;
+    }
+
+    75% {
+        translate: 0 40px;
+    }
+
+    100% {
+        
+        background-image: linear-gradient(30deg, red, blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.text-3 {
+    animation-name: thirdword;
+    animation-duration: 1.5s;
+}
+
+@keyframes thirdword {
+    0% {
+        translate: 0 150px;
+        opacity: 0;
+        background-image: linear-gradient(30deg, red, blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    50% {
+        translate: 0 -20;
+    }
+
+    75% {
+        translate: 0 -40px;
+    }
+
+    100% {
+        
+        background-image: linear-gradient(30deg, red, blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.text-4 {
+    animation-name: fouthword;
+    animation-duration: 1.5s;
+}
+
+@keyframes fouthword {
+    from {
+        rotate: -40deg;
+        translate: 150px 150px;
+        opacity: 0;
+        background-image: linear-gradient(30deg, red, blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    to {
+        background-image: linear-gradient(30deg, red, blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.text-5 {
+    animation-name: fifthword;
+    animation-duration: 1.5s;
+}
+
+@keyframes fifthword {
+    from {
+        translate: 150px;
+        opacity: 0;
+        background-image: linear-gradient(30deg, red, blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    to {
+        background-image: linear-gradient(30deg, red, blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+/* p {
+    animation: textshadow;
+    animation-delay: 3s;
+    animation-duration: 1s;
+}
+
+@keyframes textshadow {
+    to {
+        text-shadow: 3px 3px 3px lineargradient(30deg, red, blue);
+    }
+} */

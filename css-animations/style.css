@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animation {
+    font-size: 30px;
+    width: 400px;
+    height: 180px;
+    padding: 40px;
+    border-radius: 5%;
+    background-color: skyblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation {
+    0% {
+        rotate: 0;
+        transform: 0;
+        translate: -1500px;
+        scale: 1;
+        opacity: 1;
+    }
+
+    25% {
+        rotate: -180deg;
+        transform: skew(15deg, 15deg);
+        translate: -1500px;
+        scale: 0.5;
+        opacity: 0.4;
+    }
+
+    75% {
+        rotate: 0;
+        transform: 0;
+        translate: 0;
+        scale: 1;
+        opacity: 1;
+    }
+
+    100% {
+        scale: 0;
+        opacity: 0;
+    }
+}
